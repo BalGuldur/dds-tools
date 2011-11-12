@@ -1,0 +1,13 @@
+<%= form_for(@switch) do |f| %>
+  <div class="field">
+    <%= f.label :ipaddress %><br />
+    <%= f.text_field :ipaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

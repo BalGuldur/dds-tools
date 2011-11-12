@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ipaddress:</b>
+  <%= @switch.ipaddress %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @switch.address %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @switch.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_switch_path(@switch) %> |
+<%= link_to 'Back', switches_path %>

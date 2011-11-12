@@ -1,0 +1,28 @@
+<h1>Listing switches</h1>
+
+<table>
+  <tr>
+    <th>Ipaddress</th>
+    <th>Address</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @switches.each do |switch| %>
+  <tr>
+    <td><%= switch.ipaddress %></td>
+    <td><%= switch.address %></td>
+    <td><%= switch.status %></td>
+    <td><%= link_to 'Show', switch %></td>
+    <td><%= link_to 'Edit', edit_switch_path(switch) %></td>
+    <td><%= link_to 'Destroy', switch, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<h2>Add switch</h2>
+<%= render :partial => 'switches/form' %> 
