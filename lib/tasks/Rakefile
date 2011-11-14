@@ -1,0 +1,6 @@
+namespace :wswtask do
+  desc "ping each ip from switches"
+  task :pingall do
+    puts "Pings all"
+  end
+end

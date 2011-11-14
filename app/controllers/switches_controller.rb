@@ -45,7 +45,8 @@ class SwitchesController < ApplicationController
 
     respond_to do |format|
       if @switch.save
-        format.html { redirect_to @switch, notice: 'Switch was successfully created.' }
+        format.html { redirect_to switches_url }
+#@switch, notice: 'Switch was successfully created.' }
         format.json { render json: @switch, status: :created, location: @switch }
       else
         format.html { render action: "new" }
